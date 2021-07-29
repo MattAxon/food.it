@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='styles/register.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='register.js') }}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="loginPage" >GeoLocator</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content-body">
+        <div id='card' class="card">
+            
+            <div class="card-body">
+                <h1 class="card-title">
+                Register
+                </h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="usernameInput">Username:</label>
+                            <input placeholder="Username" class="form-control" id="usernameInput">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="emailInput">Email:</label>
+                            <input type="email" class="form-control" placeholder="email@website.com" id="emailInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="passwordInput">Password:</label>
+                    <input id="passwordInput" type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="passwordConfirm">Confirm Password:</label>
+                    <input id="passwordConfirm" type="password" class="form-control" placeholder="Password">
+                </div> 
+                <button id="submitBtn" class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
