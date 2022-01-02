@@ -1,0 +1,80 @@
+#body{
+    background-color: rgb(118, 115, 159);
+    border-width: 0px;
+}
+#h1 {
+    text-align: center;
+    color: white;
+}
+#header {
+    width: 100%;
+    background-color: rgb(190, 159, 154);
+    height: 10vh;
+}
+#main-body{
+    height: max-content;
+    width: 100%;
+    height: 90vh;}
+#search-bar{
+    position: absolute;
+    top: 50vh;
+    height: 7.5vh;
+    width: 75vw;
+    left: 12.5vw;
+    font-size: 16pt;
+}
+#profile{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.dropdown-menu{
+    width: 50px;
+}
+#inputErrorIcon{
+    color: red;
+}
+#searchbarLabel{
+    position: absolute;
+    top: 60vh;
+    left: 12.5vw;
+    visibility: hidden;
+}
+
+#resultCard{
+    width: 80vw;
+    visibility: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#searchClose{
+    position: absolute;
+    right: 0px;
+    z-index: 100;
+    font-size: 25px;
+    color: white;
+}
+#searchClose:hover{
+    color: gray;
+}
+
+#cardImg{
+    height: 80vh;
+}
+#headerGap{
+    width: 5px;
+}
+#tableBody{
+    margin: auto;
+    text-align: left;
+}
+#table{
+    border-collapse: separate;
+    border-spacing: 50px 0px;
+}
+
+#directionsDiv{
+    width: 40vw;
+}

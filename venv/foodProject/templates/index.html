@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoReasearcher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fcef2385eb.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{{ url_for('static',filename='main.js') }}"></script>
+
+</head>
+<body id="body">
+    
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="loginPage" >Food.It</a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li id="profile-container" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href='#' role="button" aria-haspopup="true" aria-expanded="false"><i id="profile" class="fas fa-user"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item">profile</a>
+                    <a class="dropdown-item">settings</a>
+                    <a href="loginPage" class="dropdown-item">sign out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main-body">
+        <input class="form-control" placeholder="Enter Food Name" id="search-bar" type="text">
+        <label id="searchbarLabel" for="search-bar"><i id="inputErrorIcon" class="fas fa-exclamation-circle"></i>   Search Term Not Found</label>
+
+        <div id="resultCard"  class="card">
+            <i id="searchClose" class="fas fa-window-close"></i>
+            <img id="cardImg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" id="foodNameDisplay"></h5>
+              <span class="row">
+                  <h6 class="card-subtitle mb-2 text-muted" id="foodArea"></h6>
+                  <h6 id="headerGap"></h6>
+                  <h6 class="card-subtitle mb-2 text-muted" id="foodCategory"></h6>
+              </span>
+              
+              <h7 class="card-text" id=""></h7>
+              <h6 class="card-title" id="recipeLabel">Recipe</h6>
+              <div class="row">
+                <table id="table">
+                    <th>Ingredients</th>
+                    <th>Measurements</th>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+                <div id="directionsDiv">
+                    <th id="directionLabel"><b>Directions</b></th>
+                    <p id="directionText" class="card-text"></p>
+                </div>
+              </div>
+               
+            </div>
+            
+
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
